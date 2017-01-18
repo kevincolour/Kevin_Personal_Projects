@@ -1,0 +1,159 @@
+
+
+
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src= "index.js"> </script>
+
+
+<style>
+
+button {
+    width : 200px;
+    height : 100px;
+    left : 50%;
+}
+
+/* NOT MY CODE. SRC http://stackoverflow.com/questions/15068624/how-to-place-div-inside-another-div-to-absolute-position */
+
+#button_wrapper{
+    width:100px;
+    height:75px;
+    position:relative;
+    left : 40%;
+}
+#container{
+    width:200px;
+    height:300px;
+    position:relative;
+    border:1px solid black;
+    left : 40%;
+
+}
+.box{
+    border:1px solid red;
+    position:absolute;
+    width:30px;
+    height:30px;    
+}
+.top{top:0}
+.middle{top:50%;margin-top:-10px;/*half of the .box height*/}
+.bottom{bottom:0}
+
+.left{left:0;}
+.center{left:50%;margin-left:-10px;/*half of the .box width*/}
+.right{right:0;}
+
+/* THE ABOVE IS NOT MY CODE. SRC http://stackoverflow.com/questions/15068624/how-to-place-div-inside-another-div-to-absolute-position */
+
+#answer_box{
+    background-color : blue;
+    height : 70px;
+}
+/* BELOW is repeated code... i am aware of efficiency issues ehre */
+#zero_button{
+	position:absolute;
+	left : 90;
+	top : 65;
+}
+#plus_button{
+	position:absolute;
+	left : 90;
+	top : 215;
+}
+#minus_button{
+	position:absolute;
+	top : 215;
+}
+#equal_button{
+	position:absolute;
+	left : 170;
+	top : 215;
+}
+
+/* ABOVE is repeated code... i am aware of efficiency issues ehre */
+
+
+
+
+p {
+	color : black;
+	font-size: 15px;
+    position : relative;
+    left : 50%;
+
+}
+
+#answer {
+    color : red;
+    font-size : 40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NOT ALL MY OWN CODE. SRC http://stackoverflow.com/questions/15068624/how-to-place-div-inside-another-div-to-absolute-position -->
+
+
+
+<div id="container" >
+
+
+	<div id = "zero_button" class="box"><p> 0</p></div>
+	<div id = "minus_button" class="box"><p> -</p></div>
+	<div id = "plus_button" class="box"><p> +</p></div>
+	<div id = "equal_button" class="box"><p> =</p></div>
+
+
+
+    <div id = "one" class="box top left">
+        <p> 1</p>
+    </div>
+    <div id = "two" class="box top center">
+        <p> 2</p>
+    </div>
+    
+    <div id = "three" class="box top right"><p> 3</p></div>
+
+   
+
+    <div id = "four" class="box middle left"><p> 4</p></div>
+    
+    <div id = "five" class="box middle center"><p> 5</p></div>
+    
+    <div id = "six" class="box middle right"><p> 6</p></div>
+    
+    <div id = "sevem" class="box bottom left"><p> 7</p></div>
+    
+    <div id = "eight" class="box bottom center"><p> 8</p></div>
+    
+    <div id = "nine" class="box bottom right"><p> 9</p></div>
+    
+</div>
+
+<!-- THE ABOVE IS NOT MY CODE. SRC http://stackoverflow.com/questions/15068624/how-to-place-div-inside-another-div-to-absolute-position -->
+</br>
+</br>
+</br>
+
+<div id = "button_wrapper">
+<button>CLEAR </button>
+</div>
+ 
+
+<div id = "answer_box" > 
+<p id = "answer">
+
+</p>
+
+
+</div>
+
+</br>
+
+
+</body>
