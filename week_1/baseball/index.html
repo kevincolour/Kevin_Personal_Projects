@@ -1,0 +1,74 @@
+
+
+
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src= "index.js"> </script>
+<style>
+
+input {
+    background-color : gray;
+}
+#container{
+    width:100px;
+    height:500px;
+    position:relative;
+    border:1px solid black;
+}
+#win_lose{
+	font-size : 50px;
+	color : red;
+}
+</style>
+
+</head>
+
+<body>
+
+
+AUTHORS NOTE:  I am very aware that the design leaves something to be dseired. I am not doing these projects to learn design. I'm doing them to learn.
+
+</br>
+</br>
+
+
+<h1> HOW TO PLAY </h1>
+
+<p>  The Objective of the game is to guess the 4 digit, randomly generated number (the ANSWER) by guessing repeatedly. </p>
+<p> There are couple of rules to this game to help you achieve the Objective.  </p>
+<ul>
+	<li>
+	The random genrated number(the ANSWER) does not have repeat digits. IE 0033 is NOT a valid number. 0123 is valid. 2301 is valid. 
+	</li>
+	<li>
+	You must guess only 4 digits at a time.
+	</li>
+	<li>
+	If one of the digits in the number you provide matches the ANSWER, then a B is shown. If the ANSWER is 1234 and you guess 4321, there will be 4 "B"s.
+	</li>
+	<li>
+	If one of the digits in the number you provide is in the same column as the ANSWER, then a S is shown. If the ANSWER is 1234 and you guess 1243, there will be an output of "SSBB".
+	</li>
+</ul>
+<p> Good luck, and have fun. I used to play this game with my family when on vacations. We averaged around 10 guesses to find the answer. </p>
+<p> p.s. console.log shows the answer :) </p>
+<div id="container" >
+
+    
+</div>
+<input id = guess_input></input>
+<button id = "guess"> Guess! </button>
+
+
+
+
+</br>
+</br>
+</br>
+
+<input id = "answer_input" style = "background-color : blue;"></input>
+<button id = "answer"> Answer!! </button>
+
+
+</body>
