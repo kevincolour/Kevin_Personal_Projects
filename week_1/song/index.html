@@ -1,0 +1,118 @@
+
+
+
+
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src= "index.js"> </script>
+<style>
+
+
+.volume_buttons{
+	display : inline-block;
+	
+}
+#song_button{
+	width : 200px;
+	height : 20%;	
+}
+#pause_button{
+	width : 200px;
+	height : 20%;
+	color : red;
+}
+
+#container{
+    width:100px;
+    height:500px;
+    position:relative;
+    left: 30%;
+}
+
+audio {
+	display: none;
+}
+#audio_together {
+	display: unset;
+}
+
+#volume_button{
+	width :50px;
+	height : 50px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+AUTHORS NOTE:  I am very aware that the design leaves something to be dseired. I am not doing these projects to learn design. I'm doing them to learn.
+
+</br>
+</br>
+
+
+<div id="container" >
+	<button id = "song_button"> Sing </button>
+
+	</br>
+	</br>
+	</br>
+	<div>
+	<button id = "pause_button"> Pause </button>
+	</div>
+	
+		  <audio controls id = "kevin_audio">
+		 <source src="./misc/kevin_all_of_me.wav"
+		         type='audio/mp3'>
+		 <!-- The next two lines are only executed if the browser doesn't support MP4 files -->
+		 <source src="./misc/kevin_all_of_me.oga"
+		         type='audio/ogg; codecs=vorbis'>
+		 <!-- The next line will only be executed if the browser doesn't support the <audio> tag-->
+		 <p>Your user agent does not support the HTML5 Audio element.</p>
+		</audio>
+		<audio controls id = "artist_audio">
+		 <source src="./misc/artist_all_of_me.wav"
+		         type='audio/mp3'>
+		 <!-- The next two lines are only executed if the browser doesn't support MP4 files -->
+		 <source src="./misc/artist_all_of_me.oga"
+		         type='audio/ogg; codecs=vorbis'>
+		 <!-- The next line will only be executed if the browser doesn't support the <audio> tag-->
+		 <p>Your user agent does not support the HTML5 Audio element.</p>
+		</audio>
+
+
+ 
+	<div id = "volume_buttons">
+	<h5> Kevin's Volume </h5>
+	<button id = "k_volume_increase"> + </button>
+	<button id = "k_volume_decrease"> - </button>
+	</div>
+
+
+</div>
+
+		<h1> What it aws supposed to sound like...  </h1>
+
+		<audio controls id = "audio_together">
+		 <source src="./misc/all_of_me_together.wav"
+		         type='audio/mp3'>
+		 <!-- The next two lines are only executed if the browser doesn't support MP4 files -->
+		 <source src="./misc/all_of_me_together.oga"
+		         type='audio/ogg; codecs=vorbis'>
+		 <!-- The next line will only be executed if the browser doesn't support the <audio> tag-->
+		 <p>Your user agent does not support the HTML5 Audio element.</p>
+		</audio>
+
+
+
+</br>
+</br>
+</br>
+
+
+
+
+</body>
